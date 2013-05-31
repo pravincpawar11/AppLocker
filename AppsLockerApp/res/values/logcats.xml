@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_name_pattern">Start.*cmp=([\\w\\._]*)/([\\w\\._]*)</string>
+    <string name="logcat_command">logcat ActivityManager:I *:S</string>
+    <string name="logcat_clear_command">logcat -c</string>
+</resources>

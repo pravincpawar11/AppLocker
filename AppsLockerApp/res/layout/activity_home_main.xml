@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:id="@+id/lyHeader"
+            layout="@layout/header" />
+    </LinearLayout>
+
+    <!-- Footer options -->
+
+    <LinearLayout
+        android:id="@+id/linFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnSetPassword"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_setpassword"
+            android:gravity="center"
+            android:onClick="onClick" />
+
+        <ToggleButton
+            android:id="@+id/tglLockOnOff"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/check"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlockedApps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linHeader" >
+
+        <TextView
+            android:id="@+id/imglockApp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_submenu"
+            android:gravity="center"
+            android:text="Locked Apps"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/linlockedApps"
+        android:layout_below="@+id/linlockedApps" >
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grdviewlockApp"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:horizontalSpacing="10dip"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip" />
+
+    <GridView
+        android:id="@+id/grdviewUnlockApp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linFooter"
+        android:layout_below="@+id/linUnlockedApps"
+        android:horizontalSpacing="20dip"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dip" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/linUnlockedApps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/grdviewlockApp" >
+
+        <TextView
+            android:id="@+id/imgUnlockApp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_submenu"
+            android:gravity="center"
+            android:text="Unlock Apps"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

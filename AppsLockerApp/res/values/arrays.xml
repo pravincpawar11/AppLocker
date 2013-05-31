@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="relock_timeout_entries">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="relock_timeout_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="dont_block_app_list">
+        <item>com.whatsapp</item>
+        <item>com.skype.raider</item>
+        <item>com.facebook.katana</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.google.android.gm</item>
+        <item>com.linkedin.android</item>
+        <item>com.facebook.orca</item>
+        <item>com.android.settings</item>
+        <item>com.appsplanet.appslockerapp</item>
+    </string-array>
+
+</resources>

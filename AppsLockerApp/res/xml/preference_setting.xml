@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Enable AppLocker" >
+        <CheckBoxPreference
+            android:key="start_service_after_boot"
+            android:summaryOff="Manually startup service after reboot"
+            android:summaryOn="Auto enable AppLocker after reboot"
+            android:title="Auto Start Service" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
